@@ -1,0 +1,34 @@
+totalweight = 0;
+var i;
+for(i = 0; i < instance_number(ratobj); i+=1)
+{
+    if(instance_find(ratobj, i).isSelected == 1)
+    {
+      
+        //instance_find(ratobj, i).destroy();
+    }
+}
+
+for( i = 0; i < instance_number(dogobj); i+=1)
+{
+    if(instance_find(dogobj, i).isSelected == 1)
+    {
+
+     instance_find(dogobj, i).isSelected = 0;
+    }
+}
+
+for( i = 0; i < instance_number(catobj); i+=1)
+{
+    if(instance_find(catobj, i).isSelected == 1)
+    {
+   
+    
+        instance_find(catobj, i).x = 0;
+    }
+}
+
+show_debug_message("turtle number" + string(instance_number(turtleobj)));
+show_debug_message("dog number" + string(instance_number(dogobj)));
+show_debug_message("cat number" + string(instance_number(catobj)));
+show_debug_message("rat number" + string(instance_number(ratobj)));
