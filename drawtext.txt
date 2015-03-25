@@ -1,0 +1,9 @@
+draw_text(0,0, "turtle size"        + string(controller.size)        + "#"  + 
+               "turtle capacity"    + string(controller.sizelimit)   + "#"  + 
+               "weight limit"       + string(controller.weightlimit)   + "#"  +
+               "weight "            + string(controller.totalweight)   + "#"  +
+               "total animal number"+ string(controller.totalanimal)   + "#"  +
+               "step"               + string(controller.stepcount)   + "#"  +
+               "pass river animal number" + string(controller.passsize)   + "#" 
+);
+
