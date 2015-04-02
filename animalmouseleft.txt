@@ -1,0 +1,52 @@
+if( controller.dockstate == 0)
+{
+    if(PassState == 0)
+    {
+        if( controller.size <controller.sizelimit)
+        {
+            PassState = 1;
+            controller.size += 1;
+            controller.stepcount+=1;
+            controller.totalweight += weight;
+            x = turtleobj.x - (controller.size -controller.sizelimit + 1) * 32;
+            y = turtleobj.y - 50;
+        }    
+    }
+    else if(PassState == 1)
+    {
+        PassState = 0;
+        controller.size -= 1;
+        controller.stepcount+=1;
+        controller.totalweight -= weight;
+        x = startdock.x + 32 + controller.size * 32;
+        y = startdock.y ;
+    }
+}
+else if( controller.dockstate == 1)
+{
+
+}
+else if( controller.dockstate == 2)
+{
+    if(PassState == 2)
+    {
+        if( controller.size <controller.sizelimit)
+        {
+            PassState = 1;
+            controller.size += 1;
+            controller.stepcount+=1;
+            controller.totalweight += weight;
+            x = turtleobj.x - (controller.size -controller.sizelimit + 1) * 32;
+            y = turtleobj.y - 50;
+        }
+    }
+    else if (PassState == 1)
+    {
+        PassState = 2;
+        controller.size -= 1;
+        controller.stepcount+=1;
+        controller.totalweight -= weight;
+        x = enddock.x - 32 - controller.size * 32;
+        y = enddock.y ;
+    }
+}

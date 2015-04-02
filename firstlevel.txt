@@ -1,0 +1,56 @@
+if( controller.dockstate == 0)
+{
+        if(isPassed == 0)
+        {
+            if(isSelected == 0)
+            {
+                if( controller.size <controller.sizelimit)
+                {
+                    isSelected = 1;
+                    controller.size += 1;
+                    controller.stepcount+=1;
+                    controller.totalweight += weight;
+                    x = turtleobj.x - (controller.size -controller.sizelimit + 1) * 32;
+                    y = turtleobj.y - 50;
+                }
+            }
+            else
+            {
+                isSelected = 0;
+                controller.size -= 1;
+                controller.stepcount+=1;
+                controller.totalweight += weight;
+                x = startdock.x + 32 + controller.size * 32;
+                y = startdock.y ;
+            }
+        }
+    
+    
+}
+else if( controller.boardstate == 2)
+{
+/*
+        if(isPassed == 0)
+        {
+            if(isSelected == 0)
+            {
+                if( controller.size <controller.sizelimit)
+                {
+                    isSelected = 1;
+                    controller.size += 1;
+                    controller.stepcount+=1;
+                    x = turtleobj.x - (controller.size -controller.sizelimit + 1) * 32;
+                    y = turtleobj.y - 50;
+                }
+            }
+            else
+            {
+                isSelected = 0;
+                controller.size -= 1;
+                controller.stepcount+=1;
+                x = startdock.x + 32 + controller.size * 32;
+                y = startdock.y ;
+            }
+        }
+*/
+}

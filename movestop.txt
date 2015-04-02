@@ -10,7 +10,7 @@ selectcount = 0;
             inst =  instance_find(ratobj, i);
             //inst.x = turtleobj.x  + 32 *selectcount -32;
             //inst.y = turtleobj.y - 32;
-            with (inst) motion_set(180,5);
+            with (inst) motion_set(0,0);
             //show_debug_message(instance_number(turtleobj.x));
             
         }
@@ -24,7 +24,7 @@ selectcount = 0;
             inst =  instance_find(dogobj, i);
                    //inst.x = turtleobj.x  + 32 *selectcount  -32;
             //inst.y = turtleobj.y - 32;
-            with (inst) motion_set(180,5);
+            with (inst) motion_set(0,0);
             
             //show_debug_message(instance_number(inst.x));
         }
@@ -38,7 +38,7 @@ selectcount = 0;
             inst =  instance_find(catobj, i);
             //inst.x = turtleobj.x + 32 *selectcount  -32;
             //inst.y = turtleobj.y - 32;
-            with (inst) motion_set(180,5);
+            with (inst) motion_set(0,0);
             
             //show_debug_message(instance_number(inst.x));
             
